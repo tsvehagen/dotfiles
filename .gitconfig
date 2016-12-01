@@ -1,0 +1,14 @@
+[user]
+	name = Tobias Svehagen
+	email = tobias.svehagen@gmail.com
+[core]
+	editor = vim
+	whitespace = -cr-at-eol
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = tobias.svehagen@gmail.com
+	smtpPass = password
+	smtpServerPort = 587
+[alias]
+	co = checkout
