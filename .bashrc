@@ -17,3 +17,6 @@ alias g='grep -HInr'
 PS1='[\u@\h \W]\$ '
 
 export PATH=$HOME/bin:$PATH
+
+export VISUAL=vim
+export EDITOR=vim
