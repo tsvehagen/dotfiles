@@ -1,3 +1,3 @@
 #!/bin/sh
 
-feh --bg-fill $HOME/.wallpaper
+feh --bg-fill --no-fehbg $HOME/.wallpaper
