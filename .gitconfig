@@ -3,7 +3,6 @@
 	email = tobias.svehagen@gmail.com
 [core]
 	editor = vim
-	whitespace = -cr-at-eol
 [sendemail]
 	smtpEncryption = tls
 	smtpServer = smtp.gmail.com
@@ -12,3 +11,4 @@
 	smtpServerPort = 587
 [alias]
 	co = checkout
+	cp = cherry-pick
