@@ -1,2 +1,2 @@
 #include ".Xresources.d/rxvt-unicode"
-#include ".Xresources.d/rxvt-unicode-colors"
+#include ".Xresources.d/gruvbox-dark.xresources"

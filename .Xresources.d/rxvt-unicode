@@ -1,5 +1,4 @@
 URxvt*scrollBar: false
-URxvt.transparent: true
-URxvt.shading: 10
+URxvt.transparent: false
 
 URxvt-ssh.transparent: false
