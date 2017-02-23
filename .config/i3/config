@@ -156,7 +156,7 @@ bindsym $mod+Delete mode $sysmenu
 mode $sysmenu {
         bindsym p         exec shutdown -P now
         bindsym r         exec shutdown -r now
-        bindsym s         exec systemctl suspend
+        bindsym s         exec systemctl suspend ; mode "default"
         bindsym l         exec --no-startup-id i3lock -c '#000000' ; mode "default"
         bindsym Return    mode "default"
         bindsym Escape    mode "default"
