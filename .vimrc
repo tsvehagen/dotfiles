@@ -5,6 +5,7 @@ execute pathogen#infect()
 filetype plugin indent on
 syntax on
 
+set title
 set laststatus=2
 set foldcolumn=1
 set mouse=a
@@ -38,7 +39,7 @@ set si
 set wrap
 
 set background=dark
-colorscheme solarized
+colorscheme gruvbox
 
 nnoremap H gT
 nnoremap L gt
@@ -46,7 +47,7 @@ nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>
 
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme='solarized'
+let g:airline_theme='gruvbox'
 let g:airline_left_sep=''
 let g:airline_left_alt_sep=''
 let g:airline_right_sep=''
