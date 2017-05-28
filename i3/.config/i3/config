@@ -10,6 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
+set $mod4 Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -172,9 +173,13 @@ bindsym $mod+Prior workspace prev
 bindsym $mod+Next workspace next
 bindsym $mod+Tab workspace back_and_forth
 
-bindsym $mod+Shift+Return exec urxvt -name URxvt-ssh
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
+# Scrathpad
+bindsym $mod4+Shift+minus move scratchpad
+bindsym $mod4+minus scratchpad show
+bindsym $mod4+c [window_role="browser"] scratchpad show
+bindsym $mod4+s [title="spotify"] scratchpad show
+bindsym $mod4+t [title="todoist"] scratchpad show
+bindsym $mod4+Return [class="URxvt"] scratchpad show
 
 # Special keys
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
