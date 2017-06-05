@@ -177,7 +177,7 @@ bindsym $mod+Tab workspace back_and_forth
 bindsym $mod4+Shift+minus move scratchpad
 bindsym $mod4+minus scratchpad show
 bindsym $mod4+c [window_role="browser"] scratchpad show
-bindsym $mod4+s [title="Spotify"] scratchpad show
+bindsym $mod4+s [class="Spotify"] scratchpad show
 bindsym $mod4+t [title="todoist"] scratchpad show
 bindsym $mod4+Return [class="URxvt"] scratchpad show
 
