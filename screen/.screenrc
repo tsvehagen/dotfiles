@@ -146,10 +146,13 @@ bind = resize =
 bind + resize +5
 bind - resize -5
 bind _ resize max
-#
+
 # attrcolor u "-u b"
 # attrcolor b "R"
 
 hardstatus alwayslastline
 hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}][%{B} %d/%m %{W}%c %{g}]'
 #hardstatus string '%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR} (%{W}%n*%f %t%?(%u)%    ?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}] %{=b C}[ %m/%d %c ]%{W}'
+
+bindkey -t ^[[5;5~ prev
+bindkey -t ^[[6;5~ next

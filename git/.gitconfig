@@ -12,3 +12,11 @@
 [alias]
 	co = checkout
 	cp = cherry-pick
+	ls = log --oneline
+	st = status -sb
+
+	amend = commit --amend
+	branches = branch -a
+	remotes = remote -v
+
+	reb = "!r() { git rebase -i HEAD~$1; }; r"

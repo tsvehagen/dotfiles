@@ -1,4 +1,5 @@
 URxvt*scrollBar: false
 URxvt.transparent: false
 
-URxvt-ssh.transparent: false
+URxvt.keysym.Control-Page_Up:   \033[5;5~
+URxvt.keysym.Control-Page_Down: \033[6;5~

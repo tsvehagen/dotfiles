@@ -45,6 +45,7 @@ nnoremap H gT
 nnoremap L gt
 nnoremap tn :tabnew<CR>
 nnoremap tc :tabclose<CR>
+nnoremap s :update<CR>
 
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='gruvbox'

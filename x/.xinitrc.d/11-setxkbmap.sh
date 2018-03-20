@@ -1,3 +1,3 @@
 #!/bin/sh
 
-setxkbmap se
+setxkbmap us
