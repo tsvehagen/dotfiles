@@ -19,4 +19,6 @@
 	branches = branch -a
 	remotes = remote -v
 
-	reb = "!r() { git rebase -i HEAD~$1; }; r"
+	cat = "!cat() { git cat-file -p $1; }; cat"
+	reb = "!r() { git rebase -i --autostash HEAD~$1; }; r"
+	pr = "!pr() { git fetch origin pull/$1/head:PR-$1; }; pr"
