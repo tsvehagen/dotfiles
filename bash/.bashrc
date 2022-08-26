@@ -15,6 +15,7 @@ alias la='ls -a'
 alias ll='ls -l'
 alias grep='grep --color=auto'
 alias g='grep -HInr'
+alias gg='git grep -Hpnr'
 alias dc='docker-compose'
 
 PS1='[\u@\h \W]\$ '
