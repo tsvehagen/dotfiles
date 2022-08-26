@@ -156,3 +156,5 @@ hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u
 
 bindkey -t ^[[5;5~ prev
 bindkey -t ^[[6;5~ next
+
+maptimeout 5
