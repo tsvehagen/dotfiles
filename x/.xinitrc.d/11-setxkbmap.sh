@@ -1,3 +1,3 @@
 #!/bin/sh
 
-setxkbmap us
+setxkbmap -layout us -option 'caps:ctrl_modifier'
