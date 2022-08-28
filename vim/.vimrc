@@ -37,15 +37,40 @@ set tw=0
 set ai
 set si
 set wrap
+set relativenumber
+
+set clipboard=unnamed,unnamedplus
 
 set background=dark
-colorscheme gruvbox
 
-nnoremap H gT
-nnoremap L gt
-nnoremap tn :tabnew<CR>
-nnoremap tc :tabclose<CR>
-nnoremap s :update<CR>
+let mapleader='\'
+
+"nnoremap H gT
+"nnoremap L gt
+nnoremap <leader>tn :tabnew<CR>
+nnoremap <leader>tc :tabclose<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>qq :q!<CR>
+nnoremap <leader>wq :wq!<CR>
+nnoremap <C-J> m`o<Esc>``
+nnoremap <C-K> m`O<Esc>``
+nnoremap <Space> @q
+
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+noremap <PageUp> <Nop>
+noremap <PageDown> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
+inoremap <PageUp> <Nop>
+inoremap <PageDown> <Nop>
+
+inoremap jk <Esc>
+nmap <Tab> %
 
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='gruvbox'
