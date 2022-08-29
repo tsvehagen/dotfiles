@@ -1,6 +1,17 @@
-PKGS = $(shell find * -maxdepth 0 -type d)
+PKGS := $(shell find * -maxdepth 0 -type d)
 
-default: stow
+.PHONY: $(PKGS) stow
+
+help: stow
+	@echo "Targets: all $(PKGS)"
 
 stow:
-	stow --restow -t $(HOME) $(PKGS)
+ifeq (, $(shell which stow))
+	$(error Please install stow)
+endif
+
+$(PKGS): stow
+	@echo "Installing $@"
+	stow --restow -t $(HOME) $@
+
+all: $(PKGS)
