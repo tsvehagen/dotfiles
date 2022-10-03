@@ -1,7 +1,3 @@
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-
-execute pathogen#infect()
-
 filetype plugin indent on
 syntax on
 
@@ -73,7 +69,6 @@ inoremap jk <Esc>
 nmap <Tab> %
 
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme='gruvbox'
 let g:airline_left_sep=''
 let g:airline_left_alt_sep=''
 let g:airline_right_sep=''
