@@ -14,6 +14,8 @@
 	cp = cherry-pick
 	ls = log --oneline
 	st = status -sb
+	rb = rebase -i --autosquash --autostash
+	rev = rev-list HEAD -1
 
 	amend = commit --amend
 	branches = branch -a
